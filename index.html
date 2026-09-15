@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOT News Legal</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0c0d10;
+      --panel: #15171c;
+      --text: #f6f7f9;
+      --muted: #a8adb7;
+      --line: #2a2d35;
+      --red: #e50914;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 28px;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+    }
+
+    .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 22px 0 10px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    p {
+      max-width: 720px;
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    a.card {
+      display: block;
+      min-height: 150px;
+      padding: 22px;
+      color: var(--text);
+      text-decoration: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    a.card:focus,
+    a.card:hover {
+      border-color: var(--red);
+      outline: none;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .card span {
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 24px, 920px);
+        padding: 32px 0;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="brand"><span class="dot" aria-hidden="true"></span> DOT News</div>
+      <h1>Legal Information</h1>
+      <p>These pages describe the basic terms and privacy practices for the DOT News desktop application and its TikTok publishing integration.</p>
+    </header>
+
+    <section class="links" aria-label="Legal pages">
+      <a class="card" href="terms.html">
+        <strong>Terms of Service</strong>
+        <span>Terms for using DOT News to prepare and publish photo posts to the owner's connected TikTok account.</span>
+      </a>
+      <a class="card" href="privacy.html">
+        <strong>Privacy Policy</strong>
+        <span>How DOT News handles information needed for TikTok OAuth and Content Posting API publishing.</span>
+      </a>
+    </section>
+
+    <footer>
+      Last updated: September 15, 2026
+    </footer>
+  </main>
+</body>
+</html>

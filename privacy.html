@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOT News Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      --bg: #0c0d10;
+      --panel: #15171c;
+      --text: #f6f7f9;
+      --muted: #a8adb7;
+      --line: #2a2d35;
+      --red: #e50914;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap {
+      width: min(900px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 44px 0 56px;
+    }
+
+    nav,
+    footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    nav a,
+    footer a {
+      color: var(--text);
+    }
+
+    header {
+      margin: 28px 0;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+
+    .dot {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    h1 {
+      margin: 20px 0 8px;
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 32px 0 10px;
+      font-size: 1.35rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    .content {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 640px) {
+      .wrap {
+        width: min(100% - 24px, 900px);
+        padding-top: 32px;
+      }
+
+      .content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <nav><a href="index.html">Legal home</a></nav>
+    <header>
+      <div class="brand"><span class="dot" aria-hidden="true"></span> DOT News</div>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: September 15, 2026</p>
+    </header>
+
+    <article class="content">
+      <p>This Privacy Policy explains how DOT News handles information when the desktop application is used to connect to TikTok through OAuth and publish photo posts to the owner's connected TikTok account through TikTok's Content Posting API.</p>
+
+      <h2>1. Information DOT News Uses</h2>
+      <p>DOT News uses only the information needed to operate the news preparation and TikTok publishing workflow. Depending on configuration and TikTok authorization, this may include:</p>
+      <ul>
+        <li>TikTok OAuth authorization data needed to connect the authorized TikTok account.</li>
+        <li>Basic TikTok creator or account information returned by TikTok for publishing setup and eligibility checks.</li>
+        <li>Available TikTok privacy settings returned by TikTok before publishing.</li>
+        <li>Post content prepared in DOT News, such as images, captions, hashtags, source notes, and publication settings selected for a photo post.</li>
+        <li>Local application settings needed to run the desktop publishing workflow.</li>
+      </ul>
+
+      <h2>2. How Information Is Used</h2>
+      <p>DOT News uses this information to authenticate the connected TikTok account, prepare content for review, retrieve available publishing options, and publish selected photo posts to the owner's connected TikTok account.</p>
+
+      <h2>3. Local Storage</h2>
+      <p>DOT News is a desktop application. Application settings and workflow data may be stored locally on the computer where DOT News is installed. Users are responsible for protecting access to that computer and its local files.</p>
+
+      <h2>4. Sharing of Information</h2>
+      <p>DOT News sends information to TikTok only as needed to use the TikTok OAuth and Content Posting API integration, including requests needed to authorize the account, retrieve creator and privacy setting information, and publish selected photo posts. DOT News does not sell personal information.</p>
+
+      <h2>5. Third-Party Services</h2>
+      <p>The TikTok integration is governed by TikTok's own terms, developer policies, and privacy practices. DOT News may also use configured news sources selected by the application owner as part of the local news preparation workflow.</p>
+
+      <h2>6. Data Retention</h2>
+      <p>DOT News keeps local application data only as needed for the desktop workflow or as configured by the application owner. TikTok authorization can be revoked through TikTok account or app authorization settings, subject to TikTok's available controls.</p>
+
+      <h2>7. Security</h2>
+      <p>DOT News is intended to use reasonable local safeguards appropriate for a desktop application. No method of storage or transmission is completely secure, and users should keep their operating system, application files, and TikTok account credentials protected.</p>
+
+      <h2>8. Children's Privacy</h2>
+      <p>DOT News is not intended for use by children and is designed for the owner's news publishing workflow.</p>
+
+      <h2>9. Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated from time to time to reflect changes in DOT News, TikTok API requirements, or applicable practices. The updated version will be identified by the date shown at the top of this page.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions about this Privacy Policy, contact the DOT News application owner through the contact method provided in the TikTok Developer application submission or related review materials.</p>
+    </article>
+
+    <footer>
+      <a href="terms.html">Terms of Service</a>
+    </footer>
+  </main>
+</body>
+</html>
